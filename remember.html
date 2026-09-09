@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <style>
+    div{border: 1px solid black}
+    .box{border: 1px solid pink;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    }   
+    #box1{background-color: blue;
+    position: fixed; 
+    top: 0px;
+    left: 0px;}
+
+     #box2{background-color: green;
+    position: fixed; 
+    top:10px;
+    right: 0px;}
+
+    #box3{background-color: yellow;
+    position: fixed; 
+    bottom:0px;
+    left: 0px;}
+ 
+    #box4{background-color: blueviolet;
+    position: absolute; 
+    top: 0px;
+    left: 0px;}
+
+    #box5{background-color: red;
+    position: fixed; 
+    top:50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+.container{position: relative;}
+    </style>
+</head>
+<body> 
+<hr>
+<h2>Positions</h2>
+    <div id="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+        <div class="box" id="box5">box5</div>
+    </div>
+    <!--div.conteiner>div#box$.box{box$}*5-->
+
+</body>
+</html>
