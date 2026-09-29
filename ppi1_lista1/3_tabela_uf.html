@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Parte 3 da lista</h1>
+
+    <style>
+
+        .grid-table {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            background-color: #000;
+            gap: 1px;
+            border: 1px solid #000;
+        }
+        .grid-cell {
+            background-color: #fff;
+            padding: 5px;
+            color: #000;
+        }
+        .grid-header {
+            font-weight: bold;
+        }
+        .grid-cell a {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-table">
+        <div class="grid-cell grid-header">Índice</div>
+        <div class="grid-cell grid-header">Região</div>
+        <div class="grid-cell grid-header">Nome / Estado</div>
+        <div class="grid-cell grid-header">Sigla</div>
+        <div class="grid-cell grid-header">Capital</div>
+
+        <div class="grid-cell">1</div>
+        <div class="grid-cell">Centro-Oeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Distrito Federal</a></div>
+        <div class="grid-cell">DF</div>
+        <div class="grid-cell">Brasília</div>
+
+        <div class="grid-cell">2</div>
+        <div class="grid-cell">Centro-Oeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Goiás</a></div>
+        <div class="grid-cell">GO</div>
+        <div class="grid-cell">Goiânia</div>
+
+        <div class="grid-cell">3</div>
+        <div class="grid-cell">Centro-Oeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Mato Grosso</a></div>
+        <div class="grid-cell">MT</div>
+        <div class="grid-cell">Cuiabá</div>
+
+        <div class="grid-cell">4</div>
+        <div class="grid-cell">Centro-Oeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org_do_Sul" target="_blank">Mato Grosso do Sul</a></div>
+        <div class="grid-cell">MS</div>
+        <div class="grid-cell">Campo Grande</div>
+
+        <div class="grid-cell">5</div>
+        <div class="grid-cell">Nordeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Alagoas</a></div>
+        <div class="grid-cell">AL</div>
+        <div class="grid-cell">Maceió</div>
+
+        <div class="grid-cell">6</div>
+        <div class="grid-cell">Nordeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Bahia</a></div>
+        <div class="grid-cell">BA</div>
+        <div class="grid-cell">Salvador</div>
+
+        <div class="grid-cell">7</div>
+        <div class="grid-cell">Nordeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Ceará</a></div>
+        <div class="grid-cell">CE</div>
+        <div class="grid-cell">Fortaleza</div>
+
+        <div class="grid-cell">8</div>
+        <div class="grid-cell">Nordeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Maranhão</a></div>
+        <div class="grid-cell">MA</div>
+        <div class="grid-cell">São Luís</div>
+
+        <div class="grid-cell">9</div>
+        <div class="grid-cell">Nordeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Paraíba</a></div>
+        <div class="grid-cell">PB</div>
+        <div class="grid-cell">João Pessoa</div>
+
+        <div class="grid-cell">10</div>
+        <div class="grid-cell">Nordeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Pernambuco</a></div>
+        <div class="grid-cell">PE</div>
+        <div class="grid-cell">Recife</div>
+
+        <div class="grid-cell">11</div>
+        <div class="grid-cell">Nordeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Piauí</a></div>
+        <div class="grid-cell">PI</div>
+        <div class="grid-cell">Teresina</div>
+
+        <div class="grid-cell">12</div>
+        <div class="grid-cell">Nordeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Rio Grande do Norte</a></div>
+        <div class="grid-cell">RN</div>
+        <div class="grid-cell">Natal</div>
+
+        <div class="grid-cell">13</div>
+        <div class="grid-cell">Nordeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Sergipe</a></div>
+        <div class="grid-cell">SE</div>
+        <div class="grid-cell">Aracaju</div>
+
+        <div class="grid-cell">14</div>
+        <div class="grid-cell">Norte</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Acre</a></div>
+        <div class="grid-cell">AC</div>
+        <div class="grid-cell">Rio Branco</div>
+
+        <div class="grid-cell">15</div>
+        <div class="grid-cell">Norte</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Amapá</a></div>
+        <div class="grid-cell">AP</div>
+        <div class="grid-cell">Macapá</div>
+
+        <div class="grid-cell">16</div>
+        <div class="grid-cell">Norte</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Amazonas</a></div>
+        <div class="grid-cell">AM</div>
+        <div class="grid-cell">Manaus</div>
+
+        <div class="grid-cell">17</div>
+        <div class="grid-cell">Norte</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Pará</a></div>
+        <div class="grid-cell">PA</div>
+        <div class="grid-cell">Belém</div>
+
+        <div class="grid-cell">18</div>
+        <div class="grid-cell">Norte</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Rondônia</a></div>
+        <div class="grid-cell">RO</div>
+        <div class="grid-cell">Porto Velho</div>
+
+        <div class="grid-cell">19</div>
+        <div class="grid-cell">Norte</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Roraima</a></div>
+        <div class="grid-cell">RR</div>
+        <div class="grid-cell">Boa Vista</div>
+
+        <div class="grid-cell">20</div>
+        <div class="grid-cell">Norte</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Tocantins</a></div>
+        <div class="grid-cell">TO</div>
+        <div class="grid-cell">Palmas</div>
+
+        <div class="grid-cell">21</div>
+        <div class="grid-cell">Sudeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Espírito Santo</a></div>
+        <div class="grid-cell">ES</div>
+        <div class="grid-cell">Vitória</div>
+
+        <div class="grid-cell">22</div>
+        <div class="grid-cell">Sudeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Minas Gerais</a></div>
+        <div class="grid-cell">MG</div>
+        <div class="grid-cell">Belo Horizonte</div>
+
+        <div class="grid-cell">23</div>
+        <div class="grid-cell">Sudeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Rio de Janeiro</a></div>
+        <div class="grid-cell">RJ</div>
+        <div class="grid-cell">Rio de Janeiro</div>
+
+        <div class="grid-cell">24</div>
+        <div class="grid-cell">Sudeste</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">São Paulo</a></div>
+        <div class="grid-cell">SP</div>
+        <div class="grid-cell">São Paulo</div>
+
+        <div class="grid-cell">25</div>
+        <div class="grid-cell">Sul</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Paraná</a></div>
+        <div class="grid-cell">PR</div>
+        <div class="grid-cell">Curitiba</div>
+
+        <div class="grid-cell">26</div>
+        <div class="grid-cell">Sul</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Rio Grande do Sul</a></div>
+        <div class="grid-cell">RS</div>
+        <div class="grid-cell">Porto Alegre</div>
+
+        <div class="grid-cell">27</div>
+        <div class="grid-cell">Sul</div>
+        <div class="grid-cell"><a href="https://wikipedia.org" target="_blank">Santa Catarina</a></div>
+        <div class="grid-cell">SC</div>
+        <div class="grid-cell">Florianópolis</div>
+    
+
+</body>
+</html>
