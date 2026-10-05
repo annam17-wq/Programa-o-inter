@@ -3,7 +3,7 @@
 :root {
     --cor-fundo-pagina: #dfd2ee;
     --cor-marca-principal: #865fcf;
-    --cor-marca-secundaria: #cf5fa4;
+    --cor-marca-secundaria: rgb(204, 38, 154);
     --cor-texto-marca: rgb(255, 240, 250);
     --cor-texto-principal: #30263b;
     --cor-link: #ff4f87;

@@ -18,7 +18,6 @@ body {
             background: var(--cor-marca-principal);
             min-height: 1vh;
             line-height: 1vh;
-            color: rgb(255, 240, 250);
 		}
 
         .bloco-9 {
@@ -26,11 +25,9 @@ body {
 			top: 0;
 			left: 0;
             background: var(--cor-marca-secundaria);
-            min-height: 6vh;
+            min-height: 4vh;
             line-height: 6vh;
-            color: var(--cor-texto-marca);
 		}
-
         
         .container {
             position: absolute;
@@ -86,18 +83,25 @@ body {
 
         .imagens-evento {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             gap: 16px;
         }
 
         .imagens-evento p {
             display: grid;
-            width: 180px;
-            min-height: 120px;
+            width: 400px;
+            min-height: 310px;
             margin: 0;
             place-items: center;
-            background: #fff;
-            border: 1px dashed var(--cor-marca-principal);
+            background: transparent;
+            border: none;
+        }
+
+        .imagens-evento img {
+            display: block;
+            max-width: 100%;
+            height: auto;
         }
 
         @media (max-width: 700px) {
@@ -148,9 +152,12 @@ body {
             <article class="evento">
                 <h2>Extenda-se Online</h2>
                 <div class="imagens-evento" aria-label="Imagens do Extenda-se Online">
-                    <p>Imagem</p>
-                    <p>Imagem</p>
-                    <p>Imagem</p>
+                    <p><a href="https://elasdigitais.wordpress.com/wp-content/uploads/2020/06/whatsapp-image-2020-06-02-at-13.28.50.jpeg?w=2000&h=">
+                        <img src="https://elasdigitais.wordpress.com/wp-content/uploads/2020/06/whatsapp-image-2020-06-02-at-13.28.50.jpeg?w=2000&h=" alt="Inscrição Extenda-se Online"></a></p>
+                    <p><a href="https://elasdigitais.wordpress.com/wp-content/uploads/2020/06/whatsapp-image-2020-06-02-at-13.28.49.jpeg?w=2000&h=">
+                        <img src="https://elasdigitais.wordpress.com/wp-content/uploads/2020/06/whatsapp-image-2020-06-02-at-13.28.49.jpeg?w=2000&h=" alt="Desenvolvimento em C#"></a></p>
+                    <p><a href="https://elasdigitais.wordpress.com/wp-content/uploads/2020/06/whatsapp-image-2020-06-02-at-13.28.50-1.jpeg?w=2000&h=">
+                        <img src="https://elasdigitais.wordpress.com/wp-content/uploads/2020/06/whatsapp-image-2020-06-02-at-13.28.50-1.jpeg?w=2000&h=" alt="Instagram e Pandemia"></a></p>
                 </div>
             </article>
 
