@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos | Elas Digitais</title>
+
+       <link rel="stylesheet" href="style.css">
+       <style>
+body {
+    background-color: var(--cor-fundo-pagina);
+    font-family: var(--fonte-corpo);
+}
+
+    .bloco-1 {
+			top: 0;
+			left: 0;
+            background: var(--cor-marca-principal);
+            min-height: 1vh;
+            line-height: 1vh;
+            color: rgb(255, 240, 250);
+		}
+
+        .bloco-9 {
+            position: relative;
+			top: 0;
+			left: 0;
+            background: var(--cor-marca-secundaria);
+            min-height: 6vh;
+            line-height: 6vh;
+            color: var(--cor-texto-marca);
+		}
+
+        
+        .container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: var(--largura-menu); 
+            border-collapse: separate;
+            border-spacing: var(--espacamento-menu); 
+            table-layout: fixed;
+        }
+
+        .container  td {
+            background: var(--cor-marca-principal);
+            color: var(--cor-texto-marca);
+            min-height: 3vh;
+            line-height: 3vh;
+            text-align: center;
+            vertical-align: middle;
+            padding: 3px;
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+
+        .eventos {
+            margin: var(--margem-conteudo);
+            max-width: var(--largura-conteudo);
+            padding: var(--espacamento-conteudo);
+            color: var(--cor-texto-principal);
+            font-family: var(--fonte-conteudo);
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .eventos h1,
+        .eventos h2 {
+            font-family: inherit;
+            text-align: center;
+        }
+
+        .eventos ul {
+            padding-left: 0;
+            list-style-position: inside;
+        }
+
+        .eventos a {
+            color: var(--cor-link);
+            overflow-wrap: anywhere;
+        }
+
+        .evento {
+            margin-bottom: 32px;
+        }
+
+        .imagens-evento {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .imagens-evento p {
+            display: grid;
+            width: 180px;
+            min-height: 120px;
+            margin: 0;
+            place-items: center;
+            background: #fff;
+            border: 1px dashed var(--cor-marca-principal);
+        }
+
+        @media (max-width: 700px) {
+            .eventos {
+                margin: var(--margem-conteudo-mobile);
+                padding: var(--espacamento-conteudo-mobile);
+            }
+
+            .imagens-evento {
+                flex-wrap: wrap;
+            }
+        }
+</style>
+</head>
+<body>
+    <main class="tela">
+        <div class="bloco bloco-1">
+            <a class="logo-link" href="Sobreprojeto.html"><img src="imgs/elas-removebg-preview.png" width="150" height="150" alt="Logo Elas Digitais"></a>
+            <h1><a href="Sobreprojeto.html">ELAS DIGITAIS</a></h1>
+        </div>
+        <div class="bloco bloco-9">
+        <table class="container">
+            <td><a href="Sobreprojeto.html">Sobre o projeto</a></td>
+            <td><a href="Equipe.html">Equipe</a></td>
+            <td><a href="Links.html">Links de interesse</a></td>
+            <td><a href="Eventos.html">Eventos</a></td>
+            <td><a href="Noticias.html">Notícias</a></td>
+            <td><a href="Materiais.html">Materiais disponíveis</a></td>
+            <td class="contato-menu"><a href="Contato.html">Contato</a></td>
+        </table></div>
+
+
+        <section class="eventos">
+            <h1>Eventos</h1>
+
+            <article class="evento">
+                <h2>WIT 2022</h2>
+                <p>Em 2022 o CSBC será em Niterói-RJ e o Elas Digitais vai marcar presença no evento. Vamos levar os resultados do projeto “Elas Digitais: ensino de lógica de programação através de jogos concretos”.</p>
+                <p><a href="https://csbc.sbc.org.br/2024/wit/">Saiba mais sobre o WIT</a></p>
+            </article>
+
+            <article class="evento">
+                <h2>Computer on the Beach 2022</h2>
+                <p>O Elas Digitais promoveu o workshop Meninas Digitais no XIII Computer on the Beach – 2022.</p>
+                <p><a href="https://computeronthebeach.com.br/workshop-meninas-digitais/">Workshop Meninas Digitais</a></p>
+            </article>
+
+            <article class="evento">
+                <h2>Extenda-se Online</h2>
+                <div class="imagens-evento" aria-label="Imagens do Extenda-se Online">
+                    <p>Imagem</p>
+                    <p>Imagem</p>
+                    <p>Imagem</p>
+                </div>
+            </article>
+
+            <article class="evento">
+                <h2>Women Tech Makers</h2>
+                <p><a href="https://www.womentechmakers.com/iwd19">Women Tech Makers IWD19</a></p>
+            </article>
+
+            <article class="evento">
+                <h2>1º Simpósio Brasileiro Mulheres em STEM – ITA</h2>
+                <p><a href="http://www.sbfisica.org.br/~anuncios/index.php/anuncios/eventos/2581-1-simposio-brasileiro-mulheres-em-stem-ita">1º Simpósio Brasileiro Mulheres em STEM – ITA</a></p>
+            </article>
+        </section>
+
+	</main>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias | Elas Digitais</title>
+
+       <link rel="stylesheet" href="style.css">
+       <style>
+body {
+    background-color: var(--cor-fundo-pagina);
+    font-family: var(--fonte-corpo);
+}
+
+    .bloco-1 {
+			top: 0;
+			left: 0;
+            background: var(--cor-marca-principal);
+            min-height: 1vh;
+            line-height: 1vh;
+            color: rgb(255, 240, 250);
+		}
+
+        .bloco-9 {
+            position: relative;
+			top: 0;
+			left: 0;
+            background: var(--cor-marca-secundaria);
+            min-height: 6vh;
+            line-height: 6vh;
+            color: var(--cor-texto-marca);
+		}
+
+        
+        .container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: var(--largura-menu); 
+            border-collapse: separate;
+            border-spacing: var(--espacamento-menu); 
+            table-layout: fixed;
+        }
+
+        .container  td {
+            background: var(--cor-marca-principal);
+            color: var(--cor-texto-marca);
+            min-height: 3vh;
+            line-height: 3vh;
+            text-align: center;
+            vertical-align: middle;
+            padding: 3px;
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+
+        .noticias {
+            margin: var(--margem-conteudo);
+            max-width: var(--largura-conteudo);
+            padding: var(--espacamento-conteudo);
+            color: var(--cor-texto-principal);
+            font-family: var(--fonte-conteudo);
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .noticias h1,
+        .noticias h2,
+        .noticias h3 {
+            font-family: inherit;
+            text-align: center;
+        }
+
+        .noticias ul {
+            padding-left: 0;
+            list-style-position: inside;
+        }
+
+        .noticias a {
+            color: var(--cor-link);
+            overflow-wrap: anywhere;
+        }
+
+        .grupo-noticias {
+            margin-bottom: 40px;
+        }
+
+        .noticia {
+            margin-bottom: 28px;
+        }
+
+        @media (max-width: 700px) {
+            .noticias {
+                margin: var(--margem-conteudo-mobile);
+                padding: var(--espacamento-conteudo-mobile);
+            }
+        }
+</style>
+</head>
+<body>
+    <main class="tela">
+        <div class="bloco bloco-1">
+            <a class="logo-link" href="Sobreprojeto.html"><img src="imgs/elas-removebg-preview.png" width="150" height="150" alt="Logo Elas Digitais"></a>
+            <h1><a href="Sobreprojeto.html">ELAS DIGITAIS</a></h1>
+        </div>
+        <div class="bloco bloco-9">
+        <table class="container">
+            <td><a href="Sobreprojeto.html">Sobre o projeto</a></td>
+            <td><a href="Equipe.html">Equipe</a></td>
+            <td><a href="Links.html">Links de interesse</a></td>
+            <td><a href="Eventos.html">Eventos</a></td>
+            <td><a href="Noticias.html">Notícias</a></td>
+            <td><a href="Materiais.html">Materiais disponíveis</a></td>
+            <td class="contato-menu"><a href="Contato.html">Contato</a></td>
+        </table></div>
+
+
+        <section class="noticias">
+            <h1>Notícias</h1>
+
+            <section class="grupo-noticias">
+                <h2>Notícias – Elas Digitais</h2>
+                <article class="noticia">
+                    <h3><a href="https://www.ifsc.edu.br/web/campus-gaspar/conteudo-aberto/-/asset_publisher/iktSPT1y33wn/content/id/2277655">Projeto de Extensão Elas Digitais participa do XV Women in Information Technology</a></h3>
+                </article>
+            </section>
+
+            <section class="grupo-noticias">
+                <h2>Notícias – Mulheres e Tecnologia</h2>
+                <article class="noticia">
+                    <h3><a href="http://horizontes.sbc.org.br/index.php/category/colunas/meninas-digitais/">Coluna – Meninas Digitais</a></h3>
+                </article>
+                <article class="noticia">
+                    <h3><a href="https://www.instagram.com/techsforwomen/">Mulheres na Tecnologia – 10 podcasts de mulheres falando sobre ciência</a></h3>
+                </article>
+                <article class="noticia">
+                    <h3><a href="https://icmc.usp.br/noticias/3533-9454">Ela despertou com o encanto da computação</a></h3>
+                </article>
+                <article class="noticia">
+                    <h3><a href="https://jornal.usp.br/universidade/por-que-as-mulheres-desapareceram-dos-cursos-de-computacao/">Por que as mulheres “desapareceram” dos cursos de computação?</a></h3>
+                </article>
+                <article class="noticia">
+                    <h3><a href="https://www.ifsc.edu.br/noticia/1704021/alunas-embarcam-para-final-de-competi%C3%A7%C3%A3o-internacional-para-meninas-nos-estados-unidos">Alunas embarcam para final de competição internacional para meninas nos Estados Unidos</a></h3>
+                </article>
+                <article class="noticia">
+                    <h3><a href="http://portal.sbpcnet.org.br/publicacoes/ciencia-e-mulher/">Ciência e Mulher</a></h3>
+                </article>
+                <article class="noticia">
+                    <h3><a href="https://www.horizontesaosul.com/single-post/2019/12/03/mulheres-em-pesquisas-de-campo-um-relato-sobre-entrevistas-semi-estruturadas-na-frica-do">Mulheres em pesquisas de campo: um relato sobre entrevistas semi-estruturadas na África do Sul e em Moçambique</a></h3>
+                </article>
+                <article class="noticia">
+                    <h3><a href="https://www.programaria.org/especiais/mulheres-tecnologia/">Por que o machismo cria barreiras para as mulheres na tecnologia?</a></h3>
+                </article>
+                <article class="noticia">
+                    <h3><a href="https://canaltech.com.br/espaco/plutao-foi-descoberto-ha-90-anos-e-essa-mulher-esquecida-teve-papel-importante-160656/">Plutão foi descoberto há 90 anos — e essa mulher esquecida teve papel importante</a></h3>
+                </article>
+            </section>
+        </section>
+
+	</main>
+</body>
+</html>

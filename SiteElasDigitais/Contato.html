@@ -1,0 +1,136 @@
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contato | Elas Digitais</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			background-color: var(--cor-fundo-pagina);
+			font-family: var(--fonte-corpo);
+		}
+
+		.bloco-1 {
+			top: 0;
+			left: 0;
+			background: var(--cor-marca-principal);
+			min-height: 1vh;
+			line-height: 1vh;
+			color: var(--cor-texto-marca);
+		}
+
+		.bloco-9 {
+			position: relative;
+			top: 0;
+			left: 0;
+			background: var(--cor-marca-secundaria);
+			min-height: 6vh;
+			line-height: 6vh;
+			color: var(--cor-texto-marca);
+		}
+
+		.container {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			width: var(--largura-menu);
+			border-collapse: separate;
+			border-spacing: var(--espacamento-menu);
+			table-layout: fixed;
+		}
+
+		.container td {
+			background: var(--cor-marca-principal);
+			color: var(--cor-texto-marca);
+			min-height: 3vh;
+			line-height: 3vh;
+			text-align: center;
+			vertical-align: middle;
+			padding: 3px;
+			border-radius: 6px;
+			white-space: nowrap;
+		}
+
+		.conteudo-contato {
+			max-width: var(--largura-conteudo);
+			margin: var(--margem-conteudo);
+			padding: var(--espacamento-conteudo);
+			color: var(--cor-texto-principal);
+			font-family: var(--fonte-conteudo);
+			line-height: 1.5;
+			text-align: center;
+		}
+
+		.conteudo-contato h1,
+		.conteudo-contato h2,
+		.conteudo-contato h3 {
+			text-align: center;
+		}
+
+		.conteudo-contato a {
+			color: var(--cor-link);
+			overflow-wrap: anywhere;
+		}
+
+		.secao-contato {
+			margin-bottom: 36px;
+		}
+
+		.redes-sociais {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			justify-items: center;
+			gap: 20px;
+		}
+
+		@media (max-width: 700px) {
+			.conteudo-contato {
+				margin: var(--margem-conteudo-mobile);
+				padding: var(--espacamento-conteudo-mobile);
+			}
+		}
+	</style>
+</head>
+<body>
+	<main class="tela">
+		<div class="bloco bloco-1">
+			<a class="logo-link" href="Sobreprojeto.html"><img src="imgs/elas-removebg-preview.png" width="150" height="150" alt="Logo Elas Digitais"></a>
+			<h1><a href="Sobreprojeto.html">ELAS DIGITAIS</a></h1>
+		</div>
+		<div class="bloco bloco-9">
+			<table class="container">
+				<td><a href="Sobreprojeto.html">Sobre o projeto</a></td>
+				<td><a href="Equipe.html">Equipe</a></td>
+				<td><a href="Links.html">Links de interesse</a></td>
+				<td><a href="Eventos.html">Eventos</a></td>
+				<td><a href="Noticias.html">Notícias</a></td>
+				<td><a href="Materiais.html">Materiais disponíveis</a></td>
+				<td class="contato-menu"><a href="Contato.html">Contato</a></td>
+			</table>
+		</div>
+
+		<section class="conteudo-contato">
+			<h1>Contatos</h1>
+
+			<section class="secao-contato">
+				<h2>Entre em contato</h2>
+				<p><a href="mailto:elasdigitaisifsc@gmail.com">elasdigitaisifsc@gmail.com</a></p>
+				<h3>Telefone</h3>
+				<p><a href="tel:+554733183719">(47) 3318-3719</a></p>
+				<h3>Instituto Federal de Santa Catarina - IFSC - Câmpus Gaspar</h3>
+				<p><a href="https://www.google.com/maps/search/Rua+Adriano%20Kormann,%20510%20-%20Bairro%20Bela%20Vista%20-%20CEP%2089111-009,+Gaspar,+Santa%20Catarina,+Brasil" target="_blank" rel="noopener noreferrer">Rua Adriano Kormann, 510 – Bairro Bela Vista – CEP 89111-009<br>Gaspar, Santa Catarina<br>Brasil</a></p>
+			</section>
+
+			<section class="secao-contato">
+				<h2>Siga-nos nas redes sociais!</h2>
+				<div class="redes-sociais">
+					<a href="https://www.instagram.com/elasdigitais/" target="_blank" rel="noopener noreferrer">Instagram</a>
+					<a href="http://lattes.cnpq.br/7611118951669760">Currículo Lattes</a>
+					<a href="https://www.facebook.com/elasdigitais/" target="_blank" rel="noopener noreferrer">Facebook</a>
+					<a href="https://www.youtube.com/channel/UCIUe2cO6ulsCzrgkejUWW5w?view_as=subscriber" target="_blank" rel="noopener noreferrer">YouTube</a>
+				</div>
+			</section>
+		</section>
+	</main>
+</body>
+</html>

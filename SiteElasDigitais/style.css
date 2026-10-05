@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+
+:root {
+    --cor-fundo-pagina: #dfd2ee;
+    --cor-marca-principal: #865fcf;
+    --cor-marca-secundaria: #cf5fa4;
+    --cor-texto-marca: rgb(255, 240, 250);
+    --cor-texto-principal: #30263b;
+    --cor-link: #ff4f87;
+    --cor-fundo-botao: #00a9c7;
+    --cor-fundo-botao-hover: #087e99;
+    --fonte-corpo: 'Times New Roman', Times, serif;
+    --fonte-conteudo: 'Courier New', Courier, monospace;
+    --fonte-marca: 'Orbitron', Arial, sans-serif;
+    --largura-conteudo: 900px;
+    --margem-conteudo: 48px auto;
+    --espacamento-conteudo: 24px;
+    --margem-conteudo-mobile: 24px 12px;
+    --espacamento-conteudo-mobile: 16px;
+    --largura-menu: 1400px;
+    --espacamento-menu: 60px;
+}
+
+body .bloco-1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 150px;
+    line-height: normal;
+    text-align: center;
+}
+
+body .bloco-1 .logo-link {
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    display: block;
+    width: 172px;
+    height: 172px;
+    z-index: 1;
+}
+
+body .bloco-1 .logo-link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+body .bloco-1 h1 {
+    margin: 0;
+    color: transparent;
+    font-family: var(--fonte-marca);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    -webkit-text-stroke: 1px var(--cor-texto-marca);
+}
+
+body .bloco-1 h1 a {
+    color: transparent;
+    font: inherit;
+    text-decoration: none;
+    -webkit-text-stroke: inherit;
+}
+
+body .container td {
+    position: relative;
+    padding: 0;
+    white-space: normal;
+    transition: transform 180ms ease;
+}
+
+body .container td > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 3vh;
+    padding: 3px;
+    text-decoration: none;
+}
+
+body .container td.contato-menu > a {
+    font-size: 1.1em;
+}
+
+body .container td:hover,
+body .container td:focus-within {
+    z-index: 1;
+    transform: scale(1.05);
+}
+
+body a,
+body button {
+    display: inline-block;
+    transition: transform 180ms ease;
+}
+
+body a:hover,
+body a:focus-visible,
+body button:hover,
+body button:focus-visible {
+    transform: scale(1.05);
+}
+
+body .container a {
+    transition: none;
+}
+
+body .container a:hover,
+body .container a:focus-visible {
+    transform: none;
+}
+
+@media (max-width: 1400px) {
+    body .bloco-9 {
+        min-height: auto;
+        line-height: normal;
+        padding: 8px 12px;
+    }
+
+    body .container {
+        position: relative;
+        left: auto;
+        transform: none;
+        width: 100%;
+        border-spacing: 0;
+    }
+
+    body .container td {
+        padding: 0;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        line-height: 1.3;
+    }
+
+    body .container td > a {
+        min-height: 0;
+        padding: 8px;
+        line-height: 1.3;
+    }
+}
+
+@media (max-width: 800px) {
+    body .bloco-1 {
+        min-height: 210px;
+        align-items: flex-end;
+        padding: 0 8px 12px;
+    }
+
+    body .bloco-1 h1 {
+        font-size: 56px;
+    }
+
+    body .container,
+    body .container tbody,
+    body .container tr {
+        display: block;
+        width: 100%;
+    }
+
+    body .container td {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 0;
+        margin-bottom: 6px;
+        line-height: 1.4;
+    }
+
+    body .container td:last-child {
+        margin-bottom: 0;
+    }
+
+    body a:hover,
+    body a:focus-visible,
+    body button:hover,
+    body button:focus-visible {
+        transform: scale(1.02);
+    }
+
+    body .container td:hover,
+    body .container td:focus-within {
+        transform: scale(1.02);
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1100px) {
+    body .bloco-1 h1 {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 500px) {
+    body .bloco-1 h1 {
+        font-size: 40px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body .container td,
+    body a,
+    body button {
+        transition: none;
+    }
+
+    body .container td:hover,
+    body .container td:focus-within,
+    body a:hover,
+    body a:focus-visible,
+    body button:hover,
+    body button:focus-visible {
+        transform: none;
+    }
+}
