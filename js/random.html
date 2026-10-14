@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .inputs{font-family: '';}
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class = "form" >
+            <div class="inputs">
+                <label for = "">minimo</label>
+                <input type ="number" id = "min"></input>
+          </div>
+
+          <div class="inputs">
+            <label for = "max" > maximo </label>
+            <input type ="number" id = "max">
+        </div>
+
+        </div>
+        <button id =btnsortear>Sortear</button>
+
+        <h2 id = "result">-</h2>
+    </div>
+    <script>
+        btnsortear.addEventListener("click", () =>{
+            minimo=Number.parseFloat(min, value)
+            maximo=Number.parseFloat(max, value)
+            random = (Math.random()*(maximo-minimo))+minimo //retorna entre 0 e 1
+            result.innerHTML.random;
+        })   
+    </script>
+
+</body>
+</html>

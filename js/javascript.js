@@ -93,3 +93,4 @@ let carnesDoChurrasco = ["picanha", "costela", "alcatra", "fraldinha"];
 carnesDoChurrasco.forEach(  (v1, index) => {
     console.log(v1 + "index:" + index);
 } )
+
