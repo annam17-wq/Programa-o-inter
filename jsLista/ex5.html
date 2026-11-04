@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .inputs{font-family: '';}
+        
+    </style>
+</head>
+<body>
+
+<button id="sortear" onClick="sortear()">Sortear</button>
+<div id="historico">-</div>
+<script>
+            var valoresSorteados = []
+            function sortear() {
+            r=Math.random()*100+1;
+            console.log(r)
+            valoresSorteados.push(r); 
+            console.log(valoresSorteados);
+            span=document.createElement("span"); 
+            span.textContent=r; historico.appendChild(span); }
+           
+    </script>
+
+</body>
+</html> 

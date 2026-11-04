@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1 id = "titulo">Página Legal</h1>
+
+<p id = "paragrafo"> A cor disso muda!! A cada vez que você apertar espaço!! Experimente!</p>
+
+<button id="botao">Botao decorativo</button>
+
+    <script>
+        function gerarCor() {
+            return '#' + Math.random().toString(16).slice(2, 8);
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Space') {
+                event.preventDefault(); 
+
+               
+                document.body.style.backgroundColor = gerarCor();
+                document.getElementById('titulo').style.color = gerarCor();
+                document.getElementById('paragrafo').style.color = gerarCor();
+                document.getElementById('botao').style.backgroundColor = gerarCor();
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+ 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="Mudarcor">Mudar Cor</button>
+    <button id="Copiar">Copiar Cor</button>
+    
+    <p id="codigoCor">Cor atual: #FFFFFF</p>
+
+    <script>
+      let coratual = '#FFFFFF';
+
+      function corAleatoria() {
+        const letras = '0123456789ABCDEF';
+        let cor = '#';
+        for (let i = 0; i < 6; i++) {
+          cor += letras[Math.floor(Math.random() * 16)];
+        }
+        return cor;
+      }
+
+      const botaoMudar = document.getElementById('Mudarcor');
+      const botaoCopiar = document.getElementById('Copiar');
+      const textoCor = document.getElementById('codigoCor');
+
+      botaoMudar.addEventListener('click', function() {
+        coratual = corAleatoria();
+        document.body.style.backgroundColor = coratual;
+        textoCor.innerText = "Cor atual: " + coratual;
+        botaoCopiar.innerText = "Copiar Cor";
+      });
+
+      botaoCopiar.addEventListener('click', function() {
+        navigator.clipboard.writeText(coratual).then(function() {
+          botaoCopiar.innerText = "Copiado!";
+        }).catch(function(erro) {
+          console.error("Erro ao copiar: ", erro);
+        });
+      });
+    </script>
+</body>
+</html>
